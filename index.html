@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script src="
+https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js
+"></script>
+    <script type="module" src="client.js"></script>
+  </head>
+  <body>
+    <h1>Google Maps Autocomplete API</h1>
+    <form action="/" method="post" id="input">
+      <h3>Input</h3>
+      <div class="field">
+        <label for="searchText">Search Text:</label>
+        <input
+          type="text"
+          id="searchText"
+          name="searchText"
+          placeholder="Enter search text"
+        />
+      </div>
+      <br />
+      <div class="field">
+        <label for="province">Province:</label>
+        <input
+          type="text"
+          id="province"
+          name="province"
+          placeholder="Enter province"
+        />
+      </div>
+      <div class="field">
+        <label for="municipality">Municipality:</label>
+        <input
+          type="text"
+          id="municipality"
+          name="municipality"
+          placeholder="Enter municipality"
+        />
+      </div>
+      <div class="field">
+        <label for="barangay">Barangay:</label>
+        <input
+          type="text"
+          id="barangay"
+          name="barangay"
+          placeholder="Enter barangay"
+        />
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <h3>Output</h3>
+    <textarea id="output" name="output" rows="25" cols="50"> </textarea>
+  </body>
+</html>
