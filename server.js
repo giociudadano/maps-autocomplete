@@ -1,3 +1,13 @@
+/*
+    Name: server.js
+    Author: Gio Ciudadano
+    Description:
+      - Launches a server at port 8080 and fetches index.html when localhost:8080 is visited.
+      - Returns a list of places with their address and associated barangay, municipality, and province based
+        on the passed search text and location biases when localhost:8080/maps-autocomplete is visited.
+    Launch Instructions: node server.js
+*/
+
 const axios = require('axios');
 const express = require('express');
 const app = express();
